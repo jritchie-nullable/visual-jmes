@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>visual-jmes</title>
+    <script src="./src/main.js" type="module"></script>
+</head>
+<body>
+<div class="fixed-grid">
+  <div class="grid">
+    <div>
+      <div>JMES</div>
+      <textarea class="textarea" rows=10 cols=40 id="jmesinput">{
+  my_world:@.planet
+  my_greeting:@.greetings.meeting
+}</textarea>
+    </div>
+    <div>
+      <div>EVENT</div>
+      <textarea class="textarea" rows=10 cols=40 id="objectinput">{
+  "greetings": {
+    "meeting":"hello"
+  },
+  "planet":"earth"
+}</textarea>
+    </div>
+    <div>
+      <div>Output</div>
+      <textarea class="textarea" rows=10 cols=40 id="jmesoutput"></textarea>
+    </div>
+</body>
+</html>
